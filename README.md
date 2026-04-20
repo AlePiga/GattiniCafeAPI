@@ -32,9 +32,9 @@ GattiniCafeAOI/
 git clone <URL_REPO>
 cd ./GattiniCafeAPI
 
-python -m venv venv
-source venv/bin/activate # Linux/macOS
-venv\Scripts\activate # Windows
+python -m venv .venv
+source .venv/bin/activate # Linux/macOS
+.venv\Scripts\activate # Windows
 ```
 
 ### 2. Installa le dipendenze all'interno del venv
