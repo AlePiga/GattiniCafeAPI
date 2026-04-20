@@ -2,9 +2,7 @@ from rest_framework.permissions import BasePermission, SAFE_METHODS
 
 
 class IsAdminOrReadOnly(BasePermission):
-    """
-    Lettura libera a tutti, scrittura solo agli admin (is_staff=True).
-    """
+    # Lettura libera a tutti, scrittura solo agli admin (is_staff=True).
     def has_permission(self, request, view):
         if request.method in SAFE_METHODS:
             return True
@@ -12,9 +10,8 @@ class IsAdminOrReadOnly(BasePermission):
 
 
 class IsOwnerOrAdmin(BasePermission):
-    """
-    Permette accesso agli admin o al proprietario dell'oggetto.
-    """
+    # Permette accesso agli admin o al proprietario dell'oggetto.
+
     def has_object_permission(self, request, view, obj):
         if request.user.is_staff:
             return True
