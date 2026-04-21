@@ -117,5 +117,3 @@ Il server sarà disponibile su `http://127.0.0.1:8000/`
 | Metodo | Endpoint            | Descrizione                                                             |
 | ------ | ------------------- | ----------------------------------------------------------------------- |
 | GET    | `/api/admin/stats/` | Statistiche: ordini per stato, prodotto più venduto, incasso del giorno |
-
----
