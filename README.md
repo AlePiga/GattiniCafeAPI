@@ -3,7 +3,7 @@
 ## Struttura del progetto
 
 ```
-GattiniCafeAOI/
+GattiniCafeAPI/
 ├── manage.py
 ├── gattini_cafe.db # database SQLite (fornito)
 ├── requirements.txt
